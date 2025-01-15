@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <ImageView
+        android:layout_width="716dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/final3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/loginBox"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:background="@drawable/loginbox"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+        <TextView
+            android:id="@+id/signText"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2.5"
+            android:shadowDy="2.5"
+            android:shadowRadius="4"
+            android:text="@string/signup"
+            android:textAlignment="center"
+            android:textColor="@color/mintGreen"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextbox"
+            android:drawableStart="@drawable/custom_person_icon"
+            android:drawablePadding="4dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <EditText
+            android:id="@+id/Surname"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextbox"
+            android:drawableStart="@drawable/custom_person_icon"
+            android:drawablePadding="4dp"
+            android:ems="10"
+            android:hint="Surname"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <EditText
+            android:id="@+id/identificationNumber"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextbox"
+            android:drawableStart="@drawable/custom_person_icon"
+            android:drawablePadding="4dp"
+            android:ems="10"
+            android:hint="ID number"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <Button
+            android:id="@+id/Dob"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextbox"
+            android:drawableStart="@drawable/custom_date_icon"
+            android:drawablePadding="4dp"
+            android:ems="10"
+            android:padding="12dp"
+
+            android:text="Date of Birth"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextbox"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="4dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="170dp" />
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittextbox"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="4dp"
+            android:ems="10"
+            android:hint="Password (min 5 characters!)"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loginbutton"
+            android:onClick="SignUp"
+            android:text="@string/signup"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="332dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/header"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/navyBlue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.058"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="716dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/final4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/checkInButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textColor="@color/navyBlue"
+        android:background="@drawable/check_in_button"
+        android:gravity="bottom|center"
+        android:paddingBottom="10dp"
+        android:text="Check in"
+        android:onClick="checkInButton"
+        android:fontFamily="@font/abel_regular"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <Button
+        android:id="@+id/diagnosisButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/diagnosisbutton"
+        android:gravity="bottom|center"
+        android:onClick="diagnosisButton"
+        android:paddingBottom="10dp"
+        android:text="Report diagnosis"
+        android:textSize="13sp"
+        android:textColor="@color/navyBlue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/abel_regular"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <Button
+        android:id="@+id/exposureButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/exposure_check_button"
+        android:gravity="bottom|center"
+        android:onClick="exposureCheck"
+        android:paddingBottom="10dp"
+        android:text="Exposure Check"
+        android:textColor="@color/navyBlue"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/abel_regular"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <Button
+        android:id="@+id/infectedLocalButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/infected_locations_button"
+        android:gravity="bottom|center"
+        android:onClick="infectedLocations"
+        android:paddingBottom="10dp"
+        android:text="Infected Locations"
+        android:textColor="@color/navyBlue"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        android:fontFamily="@font/abel_regular"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:onClick="logOutButton"
+        android:background="@drawable/loginbutton"
+        android:fontFamily="@font/abel_regular"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

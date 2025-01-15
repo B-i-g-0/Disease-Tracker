@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/reportDiagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Diagnosis"
+            android:textColor="@color/mintGreen"
+
+            android:shadowColor="@color/black"
+            android:shadowDx="2.5"
+            android:shadowDy="2.5"
+            android:shadowRadius="1"
+            android:textSize="24sp"
+            android:fontFamily="@font/abel_regular"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mainquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbox"
+            android:paddingTop="16dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2.5"
+            android:shadowDy="2.5"
+            android:shadowRadius="1"
+            android:text="Have you been diagnosed with COVID-19"
+            android:paddingBottom="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/mintGreen"
+            android:textSize="18sp"
+            android:fontFamily="@font/abel_regular"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:fontFamily="@font/abel_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextbox"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="2.5"
+            android:shadowDy="2.5"
+            android:shadowRadius="1"
+            android:text="Select date of the diagnoses"
+            android:fontFamily="@font/abel_regular"
+            android:textStyle="bold"
+            android:textColor="@color/mintGreen"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBlue"
+            android:calendarTextColor="@color/coral"
+            android:calendarViewShown="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/confirmButton"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="@font/abel_regular"
+                android:textStyle="bold"
+                android:text="Confirm"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/returnButton"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="@font/abel_regular"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:text="Return"
+                android:onClick="backwards"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
