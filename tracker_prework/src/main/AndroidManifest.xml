@@ -45,7 +45,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAP5w41lOg8EXWA18n6q3nJdq2vj0A4jNg" />
+            android:value="" />
 
         <activity
             android:name=".SignUpPage"
